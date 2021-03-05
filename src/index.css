@@ -78,7 +78,7 @@ p {
   justify-content: center;
   padding: 10px;
   margin: 20px auto 10px;
-  
+
   background-color: #6c7a89;
   border-radius: 5px;
 }
@@ -90,6 +90,10 @@ p {
   background-color: #3c4a59;
   padding: 10px;
   border-radius: 5px;
+}
+
+svg {
+  border: 10px solid black;
 }
 
 /* Lists: */
