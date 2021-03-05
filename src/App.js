@@ -1,10 +1,11 @@
 import BarGraph from "./BarGraph";
 
 function App() {
-  const graphHeight = "300px";
+  const graphHeight = 300;
   const barGraphData = {
     data: [35, 10, 76, 32, 55, 29, 44, 66],
     color: "yellowgreen",
+    gapPct: 10,
   };
   return (
     <div className="container-outer">
