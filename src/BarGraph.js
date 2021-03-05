@@ -1,6 +1,6 @@
 const BarGraph = () => {
   return (
-    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <svg xmlns="http://www.w3.org/2000/svg">
       {/* with relative unit such as percentage, the visual size
   of the square looks unchanged regardless of the viewBox
    */}

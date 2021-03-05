@@ -24,11 +24,10 @@ Cool Grey 11: #C5D3E2
       rel="stylesheet"
     /> */
 
-    /* <script
+/* <script
     src="https://kit.fontawesome.com/fc5fc84c88.js"
     crossorigin="anonymous"
   ></script> */
-
 
 /* <i className="fa fa-edit"></i> */
 /* <i className="fa fa-trash-o"></i> */
@@ -64,7 +63,7 @@ p {
   /* color 11 */
   color: white;
   padding: 0;
-  margin: 5px;
+  margin: 0 0 10px;
 }
 
 .dark {
@@ -73,7 +72,10 @@ p {
 }
 
 .container-outer {
-  width: 30%;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  justify-content: center;
   padding: 10px;
   margin: 20px auto 10px;
   /* background color 5 */

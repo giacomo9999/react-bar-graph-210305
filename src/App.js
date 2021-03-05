@@ -3,7 +3,7 @@ import BarGraph from "./BarGraph";
 function App() {
   return (
     <div className="container-outer">
-      <h1>APP</h1>
+      <h1>Graph Name</h1>
       <BarGraph />
     </div>
   );
