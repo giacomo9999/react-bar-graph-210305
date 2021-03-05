@@ -1,16 +1,23 @@
-const BarGraph = () => {
+const BarGraph = (props) => {
+  console.log(props);
+  // graphNumbers = array of values
+  const graphNumbers = props.graphData.data;
+  let barWidth = 100 / graphNumbers.length;
+  const graphBars = graphNumbers.map((entry, index) => (
+    <rect
+      key={"rect" + index}
+      x={barWidth * index + "%"}
+      y="0"
+      height={entry * 10}
+      width="30"
+      fill={props.graphData.color}
+    />
+  ));
+
   return (
-    <svg xmlns="http://www.w3.org/2000/svg">
-      {/* with relative unit such as percentage, the visual size
-  of the square looks unchanged regardless of the viewBox
-   */}
-      <rect x="0" y="0" width="100%" height="100%" />
-
-      {/* with a large viewBox the circle looks small
-  as it is using user units for the r attribute:
-  4 resolved against 100 as set in the viewBox */}
-
-      <circle cx="50%" cy="50%" r="4" fill="white" />
+    <svg xmlns="http://www.w3.org/2000/svg" height="300px">
+      <rect x="0" y="0" width="100%" height="300px" />
+      {graphBars}
     </svg>
   );
 };
