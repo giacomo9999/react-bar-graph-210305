@@ -4,7 +4,19 @@ function App() {
   const graphHeight = 300;
   const barGraphData = {
     graphName: "My Bar Graph",
-    data: [35, 10, 76, 32, 55, 29, 44, 66],
+    data: [
+      { label: "O", value: 35 },
+      { label: "OOO", value: 17 },
+      { label: "O", value: 73 },
+      { label: "OOOOOO", value: 27 },
+      { label: "O", value: 78 },
+      { label: "OOO", value: 55 },
+      { label: "OO", value: 37 },
+      { label: "O", value: 29 },
+      { label: "OOO", value: 77 },
+      { label: "O", value: 82 },
+      { label: "OOO", value: 16 },
+    ],
     color: "#9CAAB9",
     gap: 0.2,
   };
